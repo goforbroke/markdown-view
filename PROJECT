@@ -7,4 +7,14 @@ layout:
 - go.kubebuilder.io/v4
 projectName: markdown-view
 repo: github.com/goforbroke/markdown-view
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: goforbroke.github.io
+  group: view
+  kind: MarkdownView
+  path: github.com/goforbroke/markdown-view/api/v1
+  version: v1
 version: "3"
